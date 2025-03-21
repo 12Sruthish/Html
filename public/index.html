@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1 id="question">Waiting for host...</h1>
+        <div class="timer-bar" id="timer-bar"></div>
+        <div class="options-container" id="options-container"></div>
+        <p id="timer">Time left: <span id="time">10</span> sec</p>
+        <p id="player-list">Players: 0</p>
+        <button id="start-btn" style="display: none;">Start Quiz</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
